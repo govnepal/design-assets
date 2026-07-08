@@ -1,15 +1,22 @@
 # design-assets
 
-Asset catalog for the depot: emblems, illustrations, photos, animations.
+All design assets for the Nepal Digital Design System: icons, fonts, emblems,
+illustrations, photos, animations, and the Figma bridge.
 
-## Storage model (hybrid)
-- **In git:** all `meta/` YAML (the catalog), small vector exports (SVG), Lottie JSON,
-  emblem masters (high-governance: the audit trail is the point).
-- **In object storage + CDN:** photos, videos, high-res exports, editable sources.
-  Metadata references them via `storage_key` + sha256 `checksum`. No Git LFS.
+## Structure
 
-CI is the only writer to the bucket: binaries land in a staging prefix, the PR carries
-the metadata, and merge promotes the file to the public prefix + generates derived sizes.
+- `icons/` — official icon set: `src/` one optimized SVG per icon + `meta/` YAML (contribute: one SVG + one YAML in a PR)
+- `fonts/` — Devanagari + Latin font packages, subsetting, @font-face CSS, rendering test pages
+- `emblems/` — official emblem/flag/map masters (restricted license, never modified without government liaison)
+- `illustrations/`, `photos/`, `animations/` — asset catalog: metadata YAML in git; large binaries move to object storage + CDN when needed (none yet)
+- `figma/` — Figma library bridge: tokens-sync config, name↔spec-id mapping, library changelog
 
-Emblem/flag/map masters are restricted-license, status `official` only, and are the
-files referenced by the `identity/` specs in design-guidelines.
+`icons/`, `fonts/`, and `figma/` were separate repos (design-icons, design-fonts,
+design-figma) in the full architecture; consolidated here while the team is small.
+See "Current phase" in design-web/docs/repo-structure.md.
+
+## Rules
+
+- Every asset has metadata: title/title_ne, license, status (official | community | under-review), contributor.
+- Icon/asset metadata validates against schemas in design-guidelines.
+- MIT covers the repo code/metadata; per-asset licensing is in LICENSES.md (emblems restricted).

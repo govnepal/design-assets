@@ -1,6 +1,6 @@
 # AGENTS.md — design-assets
 
-Asset catalog: emblems (masters IN git, restricted), illustrations, photos, animations. Hybrid storage: meta/ YAML catalog + small vectors in git; large binaries in object storage referenced by storage_key + sha256 checksum. No Git LFS.
+All design assets: icons/ (SVG + meta YAML; run svgo; use currentColor; follow the iconography-style chapter), fonts/ (woff2 only, no thin weights, respect OFL licenses, Nepali needs more line-height), figma/ (direction of truth: guidelines → Figma), emblems (masters IN git, restricted), illustrations/photos/animations (meta YAML catalog in git; large binaries go to object storage + CDN when needed — none yet). No Git LFS.
 
 ## Rules
 - NEVER modify emblem/flag/map masters — they are legally controlled; changes require the government liaison.
