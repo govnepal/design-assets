@@ -1,0 +1,56 @@
+<!doctype html><html lang="ne"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Devanagari rendering test — normative evidence (§9)</title>
+<link rel="stylesheet" href="../css/fonts.css">
+<style>
+  body{font-family:var(--gov-font-ui);color:#1F1F1F;background:#F7F7F5;max-width:760px;margin:0 auto;padding:24px;line-height:1.75}
+  h1{font-size:24px} h2{font-size:18px;color:#003893;margin-top:2em}
+  .case{background:#fff;border:1px solid #DEDED8;border-radius:10px;padding:16px;margin:12px 0}
+  .label{font-size:13px;color:#6B6B66;margin-bottom:4px;font-family:var(--gov-font-ui)}
+  .ne{font-size:16px;line-height:28px} .big{font-size:28px;line-height:44px}
+  .en{font-size:16px;line-height:24px}
+  .serif{font-family:var(--gov-font-document)} .mono{font-family:var(--gov-font-mono)}
+  .w500{font-weight:500}.w600{font-weight:600}
+  .fail{color:#D4351C;font-weight:600}
+</style></head><body>
+<h1>Devanagari rendering test <span lang="en">— normative evidence for §9</span></h1>
+<p lang="en">Every case below must render correctly on each target platform/browser. A broken conjunct,
+detached matra, or misplaced reph is a compliance failure (rule: devanagari-rendering).</p>
+
+<h2>1. Conjuncts (संयुक्ताक्षर)</h2>
+<div class="case"><div class="label">Common conjuncts — must form single glyphs, not stacked pieces</div>
+<div class="ne big">क्ष त्र ज्ञ श्र द्ध द्य द्व ट्ट ठ्ठ ड्ड क्त क्र प्र ह्म ह्न ह्य ङ्क ङ्ग च्च</div></div>
+<div class="case"><div class="label">In words</div>
+<div class="ne">राष्ट्रिय, प्रमाणीकरण, दर्ता, चलानी, कार्यालय, सङ्ख्या, विद्युतीय, हस्ताक्षर, स्वीकृत, अस्वीकृत, बुद्ध, विद्या, चिट्ठा</div></div>
+
+<h2>2. Reph and rakar</h2>
+<div class="case"><div class="ne big">कर्म धर्म पूर्ण गर्नुहोस् सर्वोच्च क्रम ग्रहण प्रक्रिया</div></div>
+
+<h2>3. Matras on all sides</h2>
+<div class="case"><div class="ne big">कि की कु कू के कै को कौ कं कः कृ कँ</div>
+<div class="ne">यी सबै मात्राहरू अक्षरसँग जोडिएर देखिनुपर्छ — छुट्टिएर होइन।</div></div>
+
+<h2>4. Numerals and formats (§5)</h2>
+<div class="case"><div class="ne big">०१२३४५६७८९ · रु १,५०,००० · आ.व. २०८२/८३ · २०८२ असार २४</div>
+<div class="label">Reference numbers render mono for transcription:</div>
+<div class="mono">DARTA-2082-04-00123 · 12-01-76-12345</div></div>
+
+<h2>5. Weights — 400 / 500 / 600 only</h2>
+<div class="case">
+<div class="ne">४०० नियमित: नागरिक सेवा सरल र सुरक्षित हुनुपर्छ।</div>
+<div class="ne w500">५०० मध्यम: नागरिक सेवा सरल र सुरक्षित हुनुपर्छ।</div>
+<div class="ne w600">६०० अर्धमोटो: नागरिक सेवा सरल र सुरक्षित हुनुपर्छ।</div>
+<div class="label fail">Weights below 400 are prohibited (§9). Fake bold/italic on Devanagari is prohibited.</div></div>
+
+<h2>6. Mixed-script line height (§9: mixed lines take Nepali line-height)</h2>
+<div class="case"><div class="ne">तपाईंको Application Number <span class="mono">NP-2082-00123</span> प्रयोग गरेर status हेर्न सकिन्छ। यो लाइन १६px/२८px मा सेट छ र दुई लिपि मिसिँदा पनि रेखाहरू जुध्नु हुँदैन।</div></div>
+
+<h2>7. Document serif (certificates, official PDF)</h2>
+<div class="case serif"><div class="ne big">नेपाल सरकार</div>
+<div class="ne">यो प्रमाणपत्र नेपाल सरकारद्वारा जारी गरिएको हो। जननी जन्मभूमिश्च स्वर्गादपि गरीयसी।</div>
+<div class="en" lang="en">Government of Nepal — formal document face (Noto Serif + Noto Serif Devanagari).</div></div>
+
+<h2 lang="en">8. Line-breaking</h2>
+<div class="case" style="width:220px"><div class="label">Narrow container — syllables must not split mid-cluster</div>
+<div class="ne">प्रमाणीकरणको प्रक्रियामा तपाईंको नागरिकता प्रमाणपत्रको फोटो आवश्यक पर्छ।</div></div>
+</body></html>
