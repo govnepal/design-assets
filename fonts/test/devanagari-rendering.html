@@ -1,6 +1,6 @@
 <!doctype html><html lang="ne"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Devanagari rendering test — normative evidence (§9)</title>
+<title>Devanagari rendering test — normative evidence (§5.3)</title>
 <link rel="stylesheet" href="../css/fonts.css">
 <style>
   body{font-family:var(--gov-font-ui);color:#1F1F1F;background:#F7F7F5;max-width:760px;margin:0 auto;padding:24px;line-height:1.75}
@@ -13,7 +13,7 @@
   .w500{font-weight:500}.w600{font-weight:600}
   .fail{color:#D4351C;font-weight:600}
 </style></head><body>
-<h1>Devanagari rendering test <span lang="en">— normative evidence for §9</span></h1>
+<h1>Devanagari rendering test <span lang="en">— normative evidence for §5.3</span></h1>
 <p lang="en">Every case below must render correctly on each target platform/browser. A broken conjunct,
 detached matra, or misplaced reph is a compliance failure (rule: devanagari-rendering).</p>
 
@@ -30,7 +30,7 @@ detached matra, or misplaced reph is a compliance failure (rule: devanagari-rend
 <div class="case"><div class="ne big">कि की कु कू के कै को कौ कं कः कृ कँ</div>
 <div class="ne">यी सबै मात्राहरू अक्षरसँग जोडिएर देखिनुपर्छ — छुट्टिएर होइन।</div></div>
 
-<h2>4. Numerals and formats (§5)</h2>
+<h2>4. Numerals and formats (§3.1)</h2>
 <div class="case"><div class="ne big">०१२३४५६७८९ · रु १,५०,००० · आ.व. २०८२/८३ · २०८२ असार २४</div>
 <div class="label">Reference numbers render mono for transcription:</div>
 <div class="mono">DARTA-2082-04-00123 · 12-01-76-12345</div></div>
@@ -40,9 +40,9 @@ detached matra, or misplaced reph is a compliance failure (rule: devanagari-rend
 <div class="ne">४०० नियमित: नागरिक सेवा सरल र सुरक्षित हुनुपर्छ।</div>
 <div class="ne w500">५०० मध्यम: नागरिक सेवा सरल र सुरक्षित हुनुपर्छ।</div>
 <div class="ne w600">६०० अर्धमोटो: नागरिक सेवा सरल र सुरक्षित हुनुपर्छ।</div>
-<div class="label fail">Weights below 400 are prohibited (§9). Fake bold/italic on Devanagari is prohibited.</div></div>
+<div class="label fail">Weights below 400 are prohibited (§5.3). Fake bold/italic on Devanagari is prohibited.</div></div>
 
-<h2>6. Mixed-script line height (§9: mixed lines take Nepali line-height)</h2>
+<h2>6. Mixed-script line height (§5.3: mixed lines take Nepali line-height)</h2>
 <div class="case"><div class="ne">तपाईंको Application Number <span class="mono">NP-2082-00123</span> प्रयोग गरेर status हेर्न सकिन्छ। यो लाइन १६px/२८px मा सेट छ र दुई लिपि मिसिँदा पनि रेखाहरू जुध्नु हुँदैन।</div></div>
 
 <h2>7. Document serif (certificates, official PDF)</h2>

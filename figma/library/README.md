@@ -1,3 +1,3 @@
 # library/
 
-CHANGELOG.md per published Figma library version and structure.md documenting the page layout (00 Cover … 99 Archive per guideline §19.1).
+CHANGELOG.md per published Figma library version and structure.md documenting the page layout (00 Cover … 99 Archive per guideline §10.1.1).

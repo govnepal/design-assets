@@ -5,7 +5,7 @@ this repo makes the library versioned and auditable.
 
 - `tokens-sync/` — Tokens Studio config pointed at design-guidelines DTCG token JSON
 - `mapping/` — component-name map: "Button / Primary" ↔ `button` id
-- `library/` — CHANGELOG.md per published library version + structure.md (§19.1 pages)
+- `library/` — CHANGELOG.md per published library version + structure.md (§10.1.1 pages)
 - `exports/` — periodic token/style exports for audit diffing
 
 Direction of truth: design-guidelines → Figma (tokens/content); Figma owns visual craft.
