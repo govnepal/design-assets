@@ -1,0 +1,15 @@
+id: emblem-of-nepal
+title: Emblem of Nepal (coat of arms)
+title_ne: नेपालको राष्ट्रिय निशान छाप
+file: files/emblem-of-nepal.svg
+type: emblem
+status: official
+license: Government of Nepal — national symbol (Constitution of Nepal, Article 9, Schedule 3)
+contributor: govnepal
+source: https://govnepal.com/assets/emblem-of-nepal.svg
+notes: >-
+  Verified master, optimized with svgo (no visual change). Includes the official map of Nepal.
+  Never recreate, recolor, crop, or trace — the identity/emblem spec in design-guidelines governs
+  its use. The full emblem is for large contexts (app icons ≥96px, documents); a simplified
+  small-size mark for ≤48px favicon/avatar use is still to be produced with the authority's
+  approval (identity/favicon-app-icon).
