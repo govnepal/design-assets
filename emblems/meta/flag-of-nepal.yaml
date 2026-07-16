@@ -1,0 +1,13 @@
+id: flag-of-nepal
+title: National flag of Nepal
+title_ne: नेपालको राष्ट्रिय झन्डा
+file: files/flag-of-nepal.svg
+type: flag
+status: official
+license: Government of Nepal — national symbol (Constitution of Nepal, Article 8, Schedule 1)
+contributor: govnepal
+source: https://govnepal.com/assets/flag-of-nepal.svg
+notes: >-
+  Verified master, optimized with svgo (no visual change). The only non-rectangular national flag,
+  its double-pennant silhouette is fixed by constitutional construction (Schedule 1). Never box it
+  in a rectangle, crop, distort, or recreate with UI tokens — the identity/flag spec governs use.
